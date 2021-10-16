@@ -1,11 +1,13 @@
 
-# 概要
+# Description
 
 以下のような SVG ファイルを作成する。
 
 Create an svg file that looks like the L frame.
 
-![1600_900.png](./images/1600_900.png)
+![1600_900.svg](./images/1600_900.svg)
+
+[link to sample images](./images)
 
 # Usage
 
@@ -28,3 +30,12 @@ ruby main.rb --input template.svg.erb --main_width 1600 --main_height 900 --back
 
 The template is 1920x1080.
 Please change the template if necessary.
+
+## SVG to PNG
+
+Using [ImageMagick](https://imagemagick.org/index.php)
+
+```bash
+# (ex) output: 1600_900.png
+convert 1600_900.svg 1600_900.png
+```

@@ -28,3 +28,5 @@ end
 
 erb = ERB.new(File.read(params[:input]))
 File.write(params[:output], erb.result(get_params(params)))
+
+puts erb
